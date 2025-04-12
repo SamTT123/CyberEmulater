@@ -9,17 +9,23 @@
 <body>
   <div class="container">
     <h1>📬 Phishing Email Simulator</h1>
-    <div class="inbox">
-      <ul id="email-list"></ul>
+
+    <div id="start-screen">
+      <p>Can you identify which emails are phishing scams?</p>
+      <button onclick="startSimulation()">Start Simulation</button>
     </div>
-    <div class="email-view">
-      <h2 id="email-subject">Select an email</h2>
-      <p id="email-content"></p>
-      <div id="buttons" style="display: none;">
-        <button onclick="checkAnswer(true)">Phishing</button>
-        <button onclick="checkAnswer(false)">Safe</button>
+
+    <div id="email-screen" style="display: none;">
+      <div class="email-box">
+        <h2 id="email-subject"></h2>
+        <p id="email-content"></p>
+        <div class="button-group">
+          <button onclick="checkAnswer(true)">Phishing</button>
+          <button onclick="checkAnswer(false)">Safe</button>
+        </div>
+        <p id="feedback"></p>
+        <button id="next-btn" onclick="nextEmail()" style="display: none;">Next Email</button>
       </div>
-      <p id="feedback"></p>
       <p id="score">Score: 0 correct out of 0</p>
     </div>
   </div>
