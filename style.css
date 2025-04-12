@@ -1,4 +1,68 @@
-html {
-  height: 100%;
-  width: 100%;
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inbox {
+  float: left;
+  width: 30%;
+  border-right: 1px solid #ccc;
+  padding-right: 20px;
+}
+
+#email-list li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#email-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.email-view {
+  float: left;
+  width: 65%;
+  padding-left: 20px;
+}
+
+button {
+  margin: 10px 10px 0 0;
+  padding: 10px 15px;
+  border: none;
+  background-color: #007acc;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
